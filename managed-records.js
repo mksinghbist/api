@@ -18,6 +18,7 @@ app.get('/records', async (req, res) => {
         dataSet.status = "Error"
         if(page == undefined) {
             dataSet.error = "Not found page number"
+            dataSet.details = "page arugment is not found";
         } else {
             dataSet.error = "missing page number"
         }
